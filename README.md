@@ -21,11 +21,11 @@ This repository contains a batch file that automates various GitHub processes to
     ```
 - Configure your GitHub credentials for seamless authentication.
 
-## Usage (Windows)
-**Support for more OS will be added ;)**
+## Usage 
+### Windows
 
 1. Clone this repository to your local machine.
-2. move the repo directory to `C:\aliases`
+2. Move the repo directory to `C:\aliases`
 3. Edit the `origin` section in the batch file to set your GitHub username and email:
     ```bat
     git remote add origin https://github.com/your_user_name/%1
@@ -36,6 +36,22 @@ This repository contains a batch file that automates various GitHub processes to
     gitsetup repo_name commit_message --private/--public 
     ```
 6. Done ✨
+
+### Linux
+1. Clone this repository to your local machine.
+2. cd into the cloned repo
+3. Edit gitsetup.sh and replace github_username with your username in
+    ```bash
+    git remote add origin git@github.com:github_username/"$REPO_NAME".git
+    ```
+4. Run `chmod +x gitsetup.sh`
+5. Copy the gitsetup.sh script to your desired location, preferrably to the one where you keep all your scripts
+6. Add `export PATH=$PATH:/path/to/script` to your `~/.bashrc` file if the location is not alredy part of your PATH 
+7. Run `source ~/.bashrc`
+8. Now you can run the script from any location where you want to initialize a new github repository using
+    ```bash
+    gitsetup.sh <repo-name> <commit-message> [--private|--public]
+    ```
 
 ## Example
 ```
