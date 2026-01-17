@@ -71,3 +71,6 @@ Contributions are welcome! Please open an issue or submit a pull request.
 For any questions or feedback, please contact [rishikrishna.sr@gmail.com](mailto:rishikrishna.sr@gmail.com).
 
 ## Made with ❤️
+
+## contributor
+1. nandana 
